@@ -49,7 +49,7 @@ window.SITE_CONTENT = {
     "notice": {
       "enabled": true,
       "text": "Following a cyberattack, the Leipzig University web services are currently unavailable. Please use the following temporary email address to contact me:",
-      "email": "dejan.gajic.uni@gmail.com"
+      "emailImage": "assets/temporary-email.png"
     }
   },
   "research": {

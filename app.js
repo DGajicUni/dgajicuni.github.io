@@ -167,8 +167,8 @@
 
   function renderHome() {
     var home = data.home;
-    var notice = home.notice && home.notice.enabled !== false && (home.notice.text || home.notice.email) ?
-      '<div class="shell"><aside class="home-notice" aria-label="Temporary contact information"><p><strong>Temporary contact</strong><span>' + escapeHTML(home.notice.text || "") + (home.notice.email ? ' ' + link("mailto:" + home.notice.email, home.notice.email) : "") + '</span></p></aside></div>' : "";
+    var notice = home.notice && home.notice.enabled !== false && (home.notice.text || home.notice.emailImage) ?
+      '<div class="shell"><aside class="home-notice" aria-label="Temporary contact information"><p><strong>Temporary contact</strong><span>' + escapeHTML(home.notice.text || "") + (home.notice.emailImage ? '<img class="temporary-email-image" src="' + safeURL(home.notice.emailImage) + '" alt="Temporary contact email address">' : "") + '</span></p></aside></div>' : "";
     document.title = data.meta.name + " · " + data.meta.role;
     app.innerHTML = notice + '<div class="shell"><section class="home-hero"><div class="home-copy"><p class="lede home-intro">' + inlineLinks(home.intro, home.links) + '</p></div><figure class="portrait-wrap"><img class="portrait" src="' + safeURL(home.portrait) + '" alt="Portrait of ' + escapeHTML(data.meta.name) + '"><figcaption class="photo-credit">' + escapeHTML(home.photoCredit) + '</figcaption></figure></section></div>' +
       '<section class="section"><div class="shell home-grid"><div class="info-card"><p class="eyebrow">Contact</p><address class="address">' + home.address.map(escapeHTML).join("<br>") + '<br>Office ' + escapeHTML(home.office) + '</address><img class="email-image" src="' + safeURL(home.emailImage) + '" alt="Email address"></div>' +

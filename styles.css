@@ -195,7 +195,7 @@ h3 { margin: 0 0 .35rem; font-size: clamp(1.16rem, 2vw, 1.42rem); }
 }
 .home-notice p { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; margin: 0; line-height: 1.55; gap: .35rem 1rem; }
 .home-notice strong { color: var(--accent-dark); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
-.home-notice a { font-weight: 750; overflow-wrap: anywhere; }
+.temporary-email-image { display: block; width: min(100%, 310px); height: auto; margin-top: .55rem; }
 
 .home-hero {
   display: grid;
