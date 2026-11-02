@@ -167,8 +167,10 @@
 
   function renderHome() {
     var home = data.home;
+    var notice = home.notice && home.notice.enabled !== false && (home.notice.text || home.notice.email) ?
+      '<div class="shell"><aside class="home-notice" aria-label="Temporary contact information"><p><strong>Temporary contact</strong><span>' + escapeHTML(home.notice.text || "") + (home.notice.email ? ' ' + link("mailto:" + home.notice.email, home.notice.email) : "") + '</span></p></aside></div>' : "";
     document.title = data.meta.name + " · " + data.meta.role;
-    app.innerHTML = '<div class="shell"><section class="home-hero"><div class="home-copy"><p class="lede home-intro">' + inlineLinks(home.intro, home.links) + '</p></div><figure class="portrait-wrap"><img class="portrait" src="' + safeURL(home.portrait) + '" alt="Portrait of ' + escapeHTML(data.meta.name) + '"><figcaption class="photo-credit">' + escapeHTML(home.photoCredit) + '</figcaption></figure></section></div>' +
+    app.innerHTML = notice + '<div class="shell"><section class="home-hero"><div class="home-copy"><p class="lede home-intro">' + inlineLinks(home.intro, home.links) + '</p></div><figure class="portrait-wrap"><img class="portrait" src="' + safeURL(home.portrait) + '" alt="Portrait of ' + escapeHTML(data.meta.name) + '"><figcaption class="photo-credit">' + escapeHTML(home.photoCredit) + '</figcaption></figure></section></div>' +
       '<section class="section"><div class="shell home-grid"><div class="info-card"><p class="eyebrow">Contact</p><address class="address">' + home.address.map(escapeHTML).join("<br>") + '<br>Office ' + escapeHTML(home.office) + '</address><img class="email-image" src="' + safeURL(home.emailImage) + '" alt="Email address"></div>' +
       '<div class="info-card"><img class="entrance-image" src="' + safeURL(home.instituteImage) + '" alt="Entrance to the Institute for Theoretical Physics"><p class="small muted">' + escapeHTML(home.entranceNote) + "</p></div></div></section>";
   }

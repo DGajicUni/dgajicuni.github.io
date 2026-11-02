@@ -185,6 +185,18 @@ h3 { margin: 0 0 .35rem; font-size: clamp(1.16rem, 2vw, 1.42rem); }
 .button.secondary:hover { background: var(--highlight); }
 .button-row { display: flex; flex-wrap: wrap; margin-top: 1.5rem; gap: .7rem; }
 
+.home-notice {
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  background: var(--highlight);
+}
+.home-notice p { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; margin: 0; line-height: 1.55; gap: .35rem 1rem; }
+.home-notice strong { color: var(--accent-dark); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.home-notice a { font-weight: 750; overflow-wrap: anywhere; }
+
 .home-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(460px, .95fr);
@@ -375,6 +387,7 @@ button.talk-card:hover { transform: translateY(-2px); box-shadow: var(--shadow);
   .identity span { max-width: 160px; font-size: .59rem; line-height: 1.3; }
   .nav-toggle { padding: .48rem .65rem; font-size: .86rem; }
   .page-hero { padding-top: 3rem; }
+  .home-notice p { grid-template-columns: 1fr; }
   .section-heading { display: block; }
   .home-grid, .note-grid, .feature-grid, .talk-list, .seminar-meta { grid-template-columns: 1fr; }
   .funding-card { grid-template-columns: 1fr; }

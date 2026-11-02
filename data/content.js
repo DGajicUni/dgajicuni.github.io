@@ -17,6 +17,11 @@ window.SITE_CONTENT = {
     "navBackground": "#404040"
   },
   "home": {
+    "notice": {
+      "enabled": true,
+      "text": "Following a cyberattack, Leipzig University web services are currently unavailable. Please use the following temporary email address:",
+      "email": "dejan.gajic.uni@gmail.com"
+    },
     "intro": "I am a Professor of Mathematical Physics at the Institute for Theoretical Physics at Leipzig University and a member of the Leipzig Center for Mathematical Physics. I am also a scientific member of the International Max Planck Research School ‘Mathematics in the Sciences’.",
     "links": [
       {
