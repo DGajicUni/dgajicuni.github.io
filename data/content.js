@@ -48,7 +48,7 @@ window.SITE_CONTENT = {
     "photoCredit": "Leipzig University / Swen Reichhold",
     "notice": {
       "enabled": true,
-      "text": "Following a cyberattack, the Leipzig University web services are currently unavailable. Please use the following temporary email address to contact me:",
+      "text": "Following a cyberattack, the Leipzig University web services are currently unavailable. Please use the following email address to contact me:",
       "emailImage": "assets/temporary-email.png"
     }
   },
@@ -1454,6 +1454,14 @@ window.SITE_CONTENT = {
     "calendarEmbed": "https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FBerlin&mode=MONTH&showCalendars=0&showNav=1&showPrint=0&showTabs=0&hl=en_GB&src=OGFkYTQ4NjY2NmI2NThhMGNhNDAwNzc1YzA3NzllMTVhMzMzMDQ2MDcxZmVmZDY1NWFkZjBjZGEyN2IzYmRmMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%231d6f96",
     "calendarIcs": "https://calendar.google.com/calendar/ical/8ada486666b658a0ca400775c0779e15a333046071fefd655adf0cda27b3bdf0%40group.calendar.google.com/public/basic.ics",
     "talks": [
+      {
+        "date": "2026-10-29",
+        "speaker": "Pau Figueras",
+        "affiliation": "Queen Mary University of London",
+        "title": "Modelling Higher Derivative Theories of Gravity with Numerical Relativity",
+        "location": "",
+        "abstract": "General relativity, Einstein's theory of gravity, should be thought of as a low energy effective field theory of gravity. As such, it is expected be corrected at sufficiently small distances. These corrections encode the physics from a more fundamental theory of gravity (e.g., string theory) and, at low energies, they appear in the effective Lagrangian as a series expansion in derivatives of the spacetime metric, which are packed in polynomials of the spacetime curvature tensors. Therefore, whilst such effective field theories of gravity arise on very general grounds, their equations of motion are typically of higher than second order in derivatives of the metric.  Hence, it is not clear how to formulate the initial value problem for such theories and extract their predictions, say, for the gravitational waves emitted in the collision of two black holes. In this talk, I will present a new approach called “regularisation” that allows to formulate the initial value problem for general higher derivative effective field theories in a way such that it is manifestly well posed. As a non-trivial example, I will show how to apply this method to Dynamical Chern-Simons gravity (which has third order equations of motion) and I will present fully non-linear numerical simulations of black hole binary mergers in this theory and the corresponding gravitational waveforms."
+      },
       {
         "date": "2026-10-15",
         "speaker": "Andrew Spiers",
